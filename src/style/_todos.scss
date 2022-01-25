@@ -1,0 +1,38 @@
+.todos-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .todos-ul {
+        margin: 30px;
+    }
+}
+.li-todos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    background-color: #f6f3ee;
+    border: 1px solid #607b7d;
+    .delete-icon {
+        padding: 0 5px;
+        color: #aa0700;
+        cursor: pointer;
+    }
+    .delete-icon:hover {
+        color: #c82026;
+    }
+    .todo-row-complete {
+        padding: 0 5px 0 20px;
+        color: green;
+    }
+    .todo-row {
+        color: #e0e0e0;
+        padding: 0 5px 0 20px;
+        cursor: pointer;
+    }
+    .todo-row:hover {
+        color: #828e82;
+    }
+}
