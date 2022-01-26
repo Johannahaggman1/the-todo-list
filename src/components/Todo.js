@@ -9,6 +9,7 @@ function Todo() {
     const [pageNumber, setPageNumber] = useState(0);
     const todosPerPage = 8;
     const pageVisited = pageNumber * todosPerPage;
+    const pageCount = Math.ceil(todos.length / todosPerPage);
 
     useEffect(() => {
         axios
@@ -50,8 +51,7 @@ function Todo() {
         setTodos(removedArr);
     };
 
-    const pageCount = Math.ceil(todos.length / todosPerPage);     
-        const changePage = ({selected}) => {
+    const changePage = ({selected}) => {
         setPageNumber(selected);
     };   
 
